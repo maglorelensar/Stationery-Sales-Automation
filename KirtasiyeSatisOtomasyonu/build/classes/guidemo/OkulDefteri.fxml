@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #6b206a;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guidemo.OkulDefteriController">
+   <children>
+      <Spinner fx:id="spnDmavi" layoutX="50.0" layoutY="260.0" />
+      <Spinner fx:id="spnDsari" layoutX="234.0" layoutY="260.0" />
+      <Spinner fx:id="spnDkizli" layoutX="421.0" layoutY="260.0" />
+      <Button layoutX="66.0" layoutY="303.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="92.0" text="Sepete Ekle" textFill="#dd1010" />
+      <Button layoutX="250.0" layoutY="303.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="92.0" text="Sepete Ekle" textFill="#f81a01" />
+      <Button layoutX="437.0" layoutY="303.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="92.0" text="Sepete Ekle" textFill="#dd1010" />
+      <ImageView fitHeight="146.0" fitWidth="135.0" layoutX="62.0" layoutY="33.0">
+         <image>
+            <Image url="/DefterResimler/MaviDefter.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="146.0" fitWidth="116.0" layoutX="254.0" layoutY="33.0">
+         <image>
+            <Image url="/DefterResimler/SarıDefter.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="146.0" fitWidth="149.0" layoutX="425.0" layoutY="36.0">
+         <image>
+            <Image url="/DefterResimler/KızlıDefter.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="212.0" layoutY="351.0" mnemonicParsing="false" onAction="#btnPushSepetTTAction" prefHeight="31.0" prefWidth="116.0" text="SEPETİM" textFill="#afd00a">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="444.0" layoutY="348.0" mnemonicParsing="false" onAction="#ÜRÜNLERPushed" prefHeight="38.0" prefWidth="135.0" text="&lt;&lt;&lt;ÜRÜNLER" textFill="#1842b5">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Text fill="#5bff79" layoutX="69.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mitos Telli Mavi Defter" />
+      <Text fill="#5bff79" layoutX="256.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asist Telli Sarı Defter" />
+      <Text fill="#5bff79" layoutX="437.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pow Telli Resimli Defter" />
+      <Text fill="#5bff79" layoutX="88.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Barkod : VV76G" />
+      <Text fill="#5bff79" layoutX="271.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Barkod : LOJ43" />
+      <Text fill="#5bff79" layoutX="446.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Barkod : ZBB55" />
+      <Text fill="#5bff79" layoutX="91.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fiyat : 11.75 TL" />
+      <Text fill="#5bff79" layoutX="271.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fiyat : 20 TL" />
+      <Text fill="#5bff79" layoutX="447.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fiyat : 14.99 TL" />
+   </children>
+</AnchorPane>

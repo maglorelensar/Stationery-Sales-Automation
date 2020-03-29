@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f4bc04;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guidemo.FXMLtablewiewController">
+   <children>
+      <VBox layoutX="34.0" layoutY="33.0" prefHeight="300.0" prefWidth="471.0" spacing="10.0">
+         <children>
+            <TableView fx:id="tblWiew" prefHeight="200.0" prefWidth="435.0">
+              <columns>
+                <TableColumn fx:id="firstNameClmn" onEditCommit="#ChangeFirstNameCellEvent" prefWidth="82.0" text="Barkod" />
+                <TableColumn fx:id="lastNameClmn" onEditCommit="#ChangeLastNameCellEvent" prefWidth="94.0" text="Ürün Adı" />
+                  <TableColumn fx:id="birthdayClmn" prefWidth="93.0" text="Satış Tarihi" />
+              </columns>
+            </TableView>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <TextField fx:id="firstNametxt" promptText="Barkod" />
+                  <TextField fx:id="lastNametxt" promptText="Ürün Adı" />
+                  <DatePicker fx:id="birthdaydtpckr" promptText="Satış Tarihi">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></DatePicker>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#newPersonButtonPushed" prefHeight="25.0" prefWidth="152.0" text="Yeni Ürün Ekle" textFill="#09b92c" />
+                  <Button mnemonicParsing="false" onAction="#deletePersonButtonPushed" prefHeight="25.0" prefWidth="130.0" text="Ürün Sil" textFill="#c30606" />
+                  <Button fx:id="btnGüncelle" mnemonicParsing="false" onAction="#urunGüncelle" prefHeight="25.0" prefWidth="168.0" text="Ürün Güncelle" textFill="#940b7f" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button layoutX="447.0" layoutY="345.0" mnemonicParsing="false" onAction="#changeScreenButtonPushed" prefHeight="25.0" prefWidth="130.0" text="Ürünler --&gt;" textFill="#18099e">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="186.0" layoutY="333.0" mnemonicParsing="false" onAction="#btnUrunAraAction" prefHeight="25.0" prefWidth="152.0" text="Ürün Ara">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

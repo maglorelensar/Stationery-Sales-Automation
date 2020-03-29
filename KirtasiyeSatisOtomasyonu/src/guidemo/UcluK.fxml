@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="652.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guidemo.UcluKController">
+   <children>
+      <Spinner fx:id="spnRsiyah" layoutX="58.0" layoutY="236.0" prefHeight="25.0" prefWidth="100.0" />
+      <Label layoutX="58.0" layoutY="274.0" text="20 TL" />
+      <Button fx:id="spt1" layoutX="46.0" layoutY="306.0" mnemonicParsing="false" onAction="#btnSepeteEkle1" prefHeight="25.0" prefWidth="121.0" text="Sepete Ekle" textFill="#e11010" />
+      <Button fx:id="spt2" layoutX="259.0" layoutY="305.0" mnemonicParsing="false" onAction="#btnSepeteEkle2" prefHeight="25.0" prefWidth="121.0" text="Sepete Ekle" textFill="#e10909" />
+      <Spinner fx:id="spnFyesil" layoutX="266.0" layoutY="235.0" prefHeight="25.0" prefWidth="100.0" />
+      <Label layoutX="14.0" layoutY="240.0" text="Adet :" />
+      <Label layoutX="220.0" layoutY="239.0" text="Adet :" />
+      <Label layoutX="14.0" layoutY="274.0" text="Fiyat :" />
+      <Label layoutX="266.0" layoutY="273.0" text=" 7 TL" />
+      <Label layoutX="220.0" layoutY="273.0" text="Fiyat :" />
+      <ImageView fx:id="rotringsiyah" fitHeight="143.0" fitWidth="147.0" layoutX="37.0" layoutY="30.0">
+         <image>
+            <Image url="/icons/RotringSiyah.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="34.0" layoutY="184.0" prefHeight="25.0" prefWidth="181.0" text="Rotring Uçlu Kalem 0.7 mm" />
+      <ImageView fx:id="faberyesil" fitHeight="143.0" fitWidth="147.0" layoutX="243.0" layoutY="30.0">
+         <image>
+            <Image url="/icons/FaberYeşil.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="222.0" layoutY="188.0" text="Faber Castell 0.7 mm Versatil Kalem" />
+      <Button fx:id="spt3" layoutX="482.0" layoutY="305.0" mnemonicParsing="false" onAction="#btnSepeteEkle3" prefHeight="25.0" prefWidth="121.0" text="Sepete Ekle" textFill="#e10909" />
+      <Spinner fx:id="spnFmor" layoutX="491.0" layoutY="236.0" prefHeight="25.0" prefWidth="100.0" />
+      <Label layoutX="445.0" layoutY="240.0" text="Adet :" />
+      <Label layoutX="491.0" layoutY="274.0" text=" 8.35 TL" />
+      <Label layoutX="446.0" layoutY="274.0" text="Fiyat :" />
+      <ImageView fx:id="fabermor" fitHeight="143.0" fitWidth="147.0" layoutX="453.0" layoutY="30.0">
+         <image>
+            <Image url="/icons/FaberMor.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="426.0" layoutY="188.0" text="Faber Castell  Versatil Uçlu Kalem 0.5mm " />
+      <Button layoutX="496.0" layoutY="347.0" mnemonicParsing="false" onAction="#ButtonBackPushed" prefHeight="32.0" prefWidth="134.0" text="&lt;--- ÜRÜNLER" textFill="#1b0565">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="226.0" layoutY="340.0" mnemonicParsing="false" onAction="#btnPushSepetAction" prefHeight="32.0" prefWidth="181.0" style="-fx-background-color: #13d313;" text="SEPETİM" textFill="#f6ff00">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Text layoutX="66.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Barkod : XX44T " wrappingWidth="89.13671875" />
+      <Text layoutX="275.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Barkod : Z7YTX" wrappingWidth="89.13671934604645" />
+      <Text layoutX="497.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Barkod : 11IIU " />
+   </children>
+</AnchorPane>
